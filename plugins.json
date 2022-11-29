@@ -1,0 +1,8 @@
+{
+  "plugins": [
+    {
+      "name": "酷我",
+      "url": "https://raw.githubusercontent.com/LiTugou/MusicFreePlugins/master/kuwo.js"
+    }
+  ]
+}
