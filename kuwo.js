@@ -213,13 +213,13 @@ function kuwo(packages) {
                 origin: 'http://www.kuwo.cn/',
                 "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6",
             };
-            const res = (await axios.get('https://antiserver.kuwo.cn/anti.s?' +
+            const req = await axios.get('https://antiserver.kuwo.cn/anti.s?' +
       `type=convert_url&format=mp3&response=url&rid=${musicItem.id}`, {
                 headers
-            })).data;
+            });
 
             return {
-                url: data
+                url: req.data
             };
         },
         getAlbumInfo,
